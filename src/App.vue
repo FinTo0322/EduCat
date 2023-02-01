@@ -43,20 +43,23 @@
   <hero/>
   <product/>
   <lms/>
+  <Testimonials/>
 </template>
 
 <script>
 import hero from './components/hero.vue'
 import product from './components/product.vue'
 import lms from './components/lms.vue'
+import Testimonials from './components/testimonials.vue';
 
 export default {
   name: 'App',
   components: {
     hero,
     product,
-    lms
-  }
+    lms,
+    Testimonials
+}
 }
 </script>
 
