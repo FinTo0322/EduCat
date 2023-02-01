@@ -44,6 +44,7 @@
   <product/>
   <lms/>
   <Testimonials/>
+  <footerPage/>
 </template>
 
 <script>
@@ -51,6 +52,7 @@ import hero from './components/hero.vue'
 import product from './components/product.vue'
 import lms from './components/lms.vue'
 import Testimonials from './components/testimonials.vue';
+import footerPage from './components/footerPage.vue';
 
 export default {
   name: 'App',
@@ -58,7 +60,8 @@ export default {
     hero,
     product,
     lms,
-    Testimonials
+    Testimonials,
+    footerPage
 }
 }
 </script>

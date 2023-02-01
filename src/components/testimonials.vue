@@ -20,7 +20,7 @@
 <section class="partners text-center mt-5">
     <h5 class="text-muted">OUR HAPPY CLIENTS</h5>
     <h1>Our Partners</h1>
-    <div class="d-lg-flex justify-content-center">
+    <div class="d-md-flex justify-content-center">
         <img src="../assets/Partners/partner1.png" alt="partner 1" class="ms-5"/>
         <img src="../assets/Partners/partner2.png" alt="partner 2" class="ms-5"/>
         <img src="../assets/Partners/partner4.png" alt="partner 3" class="ms-5"/>
@@ -30,15 +30,15 @@
     </div>
 </section>
 
-<section class="d-flex justify-content-center">
-    <div class="CTA">
-        <img src="../assets/cat.svg" alt="cat" class="mt-5 mx-5">
+<section class="d-md-flex justify-content-center">
+    <div class="CTA d-md-flex">
+        <img src="../assets/cat.svg" alt="cat" class="mt-5 mx-5 img-fluid d-none d-lg-block">
         <div class="text-center mt-3">
             <h1>Want to see what Educat can do for you?</h1>
             <p>Learn more by booking a demo today and discover why Educat is the only platform you'll ever need for your learning and training needs.</p>
-            <a href="#" class="btn text-center">LET'S TALK!</a>
+            <a href="#" class="btn text-center mb-5">LET'S TALK!</a>
         </div>
-        <img src="../assets/paws.svg" alt="paws"  class="mt-5 mx-5 pt-5">
+        <img src="../assets/paws.svg" alt="paws"  class="mt-5 mx-5 pt-5 img-fluid d-none d-lg-block">
     </div>
 </section>
    </template>
@@ -96,9 +96,8 @@
         }
 
         .CTA{
-            display: flex;
+            width: 75%;
             margin-top: 10em;
-            width: 60%;
             background-color: #3966D8;
             color:white;
             border-radius: 20px;
@@ -115,9 +114,20 @@
             font-size: 16px;
         }
 
+        @media screen and (max-width: 800px) {
+            .CTA{
+                justify-items: center;
+                width: 100%;
+            }
+        }
+
         @media screen and (max-width: 560px) {
             .testimonials img{
                 margin-left: 0;
+            }
+
+            .partners{
+                justify-items: center;
             }
         }
    </style>
